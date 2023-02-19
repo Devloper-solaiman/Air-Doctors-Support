@@ -5,13 +5,11 @@ import Navbar from './Pages/Shared/Navbar';
 
 function App() {
   return (
-    <section>
+    <section className='max-w-7xl mx-auto px-12'>
       <Navbar></Navbar>
-      <div className='max-w-7xl mx-auto px-12'>
-        <Routes>
-          <Route path='/' element={<Home></Home>}></Route>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+      </Routes>
     </section>
   );
 }
